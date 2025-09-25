@@ -6,10 +6,10 @@ import { Flame, Clock, ArrowRight, Star } from "lucide-react";
 
 const UrgencySection = () => {
   const [timeLeft, setTimeLeft] = useState({
-    days: 6,
-    hours: 23,
-    minutes: 59,
-    seconds: 55
+    days: 0,
+    hours: 0,
+    minutes: 14,
+    seconds: 47
   });
 
   useEffect(() => {
@@ -28,8 +28,8 @@ const UrgencySection = () => {
               hours = 23;
               days--;
               if (days < 0) {
-                // Reset to original values
-                return { days: 6, hours: 23, minutes: 59, seconds: 55 };
+                // Reset to original values - final minutes!
+                return { days: 0, hours: 0, minutes: 14, seconds: 47 };
               }
             }
           }
@@ -103,14 +103,14 @@ const UrgencySection = () => {
           </div>
           
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Don't Miss Your <span className="text-cyber-red">Last Chance</span>
+            <span className="text-cyber-red animate-pulse-cyber">⚠️ FINAL MINUTES!</span>
             <br />
-            For <span className="text-gradient-primary">Career Freedom</span>
+            Last Chance For <span className="text-gradient-primary">Career Freedom</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            While others worry about AI taking their jobs, you'll be building an unshakeable career in cybersecurity. 
-            This exclusive bundle ends soon - secure your recession-proof future today.
+            <span className="text-cyber-red font-semibold">This price expires in minutes!</span> While others worry about AI taking their jobs, 
+            you'll be building an unshakeable career in cybersecurity. Don't let this slip away!
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
@@ -133,7 +133,7 @@ const UrgencySection = () => {
           
           <p className="text-sm text-muted-foreground mt-4">
             <Clock className="w-4 h-4 inline mr-1" />
-            Only 47 spots remaining at this price
+            Only 3 spots remaining at this price - Timer expires soon!
           </p>
         </div>
         
@@ -168,7 +168,7 @@ const UrgencySection = () => {
         <div className="text-center">
           <div className="bg-gradient-card border border-cyber-red/30 rounded-2xl p-8 max-w-4xl mx-auto shadow-cyber">
             <h3 className="text-3xl font-bold mb-4 text-cyber-red">
-              ⚠️ This Offer Disappears Forever In {timeLeft.days} Days
+              🚨 THIS OFFER DISAPPEARS IN {timeLeft.minutes} MINUTES!
             </h3>
             <p className="text-muted-foreground mb-6">
               Join the 15,000+ professionals who chose security over uncertainty. 
