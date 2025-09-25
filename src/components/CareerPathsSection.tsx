@@ -193,9 +193,19 @@ const CareerPathsSection = () => {
                     </div>
                   </div>
 
-                  <Button className="w-full group-hover:shadow-cyber transition-all duration-300 mt-4" variant="outline">
-                    Buy Now <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+<Button
+  className="w-full text-lg group-hover:shadow-cyber transition-all duration-300 mt-4"
+  variant="outline"
+>
+  Buy Now @ 999 <ArrowRight className="ml-2 w-4 h-4" />
+</Button>
+
+<Button
+  className="w-full group-hover:shadow-cyber transition-all duration-300 mt-4"
+  variant="outline"
+>
+  Buy All Bundles @ 3999 <ArrowRight className="ml-2 w-4 h-4" />
+</Button>
                 </CardContent>
               </Card>
             );

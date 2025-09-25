@@ -115,15 +115,15 @@ const UrgencySection = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-cyber-green">₹20,000</div>
-              <div className="text-lg text-muted-foreground line-through">Was ₹1,00,000</div>
-              <Badge className="bg-cyber-red text-white mt-2">Save ₹80,000 Today</Badge>
+              <div className="text-5xl font-bold text-cyber-green">₹3,999</div>
+              <div className="text-lg text-muted-foreground line-through">Was ₹25,000</div>
+              <Badge className="bg-cyber-red text-white mt-2">Save ₹21,000 Today</Badge>
             </div>
             <div className="text-4xl text-muted-foreground">+</div>
             <div className="text-center">
               <div className="text-2xl font-bold text-cyber-blue">FREE</div>
               <div className="text-sm text-muted-foreground">Career Coaching</div>
-              <div className="text-xs text-muted-foreground">(Worth ₹20,000)</div>
+              <div className="text-xs text-muted-foreground">(Worth ₹5,000)</div>
             </div>
           </div>
           
