@@ -79,22 +79,6 @@ const careerPaths = [
     description: "Learn to think like an attacker to better defend your organization's critical assets and infrastructure."
   },
   {
-    id: 5,
-    level: "Leadership",
-    title: "Cybersecurity Management",
-    subtitle: "Lead cybersecurity teams and strategy",
-    duration: "12-18 months",
-    icon: Users,
-    color: "cyber-green",
-    careers: [
-      "CISO",
-      "Security Manager",
-      "Cybersecurity Consultant"
-    ],
-    skills: ["Risk Management", "Compliance", "Team Leadership", "Strategic Planning"],
-    description: "Develop executive-level cybersecurity leadership skills to manage teams and organizational security strategy."
-  },
-  {
     id: 6,
     level: "Specialist",
     title: "Cloud Security Engineering",
@@ -150,7 +134,7 @@ const CareerPathsSection = () => {
           {careerPaths.map((path) => {
             const IconComponent = path.icon;
             return (
-              <Card key={path.id} className="bg-gradient-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card group">
+              <Card key={path.id} className="bg-gradient-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card group flex flex-col">
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between mb-4">
                     <div className={`p-3 rounded-lg bg-${path.color}/20 border border-${path.color}/30`}>
@@ -174,41 +158,43 @@ const CareerPathsSection = () => {
                   </div>
                 </CardHeader>
                 
-                <CardContent className="space-y-6">
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {path.description}
-                  </p>
-                  
-                  {/* Career Opportunities */}
-                  <div>
-                    <h4 className="font-semibold mb-3 flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-cyber-green" />
-                      Career Opportunities
-                    </h4>
-                    <ul className="space-y-2">
-                      {path.careers.map((career, index) => (
-                        <li key={index} className="text-sm text-muted-foreground flex items-center gap-2">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                          {career}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  
-                  {/* Key Skills */}
-                  <div>
-                    <h4 className="font-semibold mb-3">Key Skills</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {path.skills.map((skill, index) => (
-                        <Badge key={index} variant="secondary" className="text-xs">
-                          {skill}
-                        </Badge>
-                      ))}
+                <CardContent className="flex flex-col flex-1 justify-between space-y-6">
+                  <div className="space-y-6">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {path.description}
+                    </p>
+                    
+                    {/* Career Opportunities */}
+                    <div>
+                      <h4 className="font-semibold mb-3 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-cyber-green" />
+                        Career Opportunities
+                      </h4>
+                      <ul className="space-y-2">
+                        {path.careers.map((career, index) => (
+                          <li key={index} className="text-sm text-muted-foreground flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+                            {career}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    {/* Key Skills */}
+                    <div>
+                      <h4 className="font-semibold mb-3">Key Skills</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {path.skills.map((skill, index) => (
+                          <Badge key={index} variant="secondary" className="text-xs">
+                            {skill}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                  
-                  <Button className="w-full group-hover:shadow-cyber transition-all duration-300" variant="outline">
-                    Learn More <ArrowRight className="ml-2 w-4 h-4" />
+
+                  <Button className="w-full group-hover:shadow-cyber transition-all duration-300 mt-4" variant="outline">
+                    Buy Now <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </CardContent>
               </Card>
@@ -218,7 +204,7 @@ const CareerPathsSection = () => {
         
         <div className="text-center mt-12">
           <Button size="lg" className="bg-gradient-primary hover:shadow-cyber transition-all duration-300">
-            View All Career Paths <ArrowRight className="ml-2 w-5 h-5" />
+            Join All Career Paths <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
       </div>
