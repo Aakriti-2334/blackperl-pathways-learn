@@ -9,7 +9,9 @@ import {
   Settings,
   Users,
   BookOpen,
-  CheckCircle
+  CheckCircle,
+  ChevronRight,
+  ChevronDown
 } from "lucide-react";
 
 const curriculumStages = [
@@ -116,18 +118,17 @@ const CurriculumSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {curriculumStages.map((stage, index) => {
             const IconComponent = stage.icon;
-            const isEven = index % 2 === 0;
             
             return (
               <Card 
                 key={index} 
-                className={`bg-gradient-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-card group relative overflow-hidden ${isEven ? 'lg:mt-8' : 'lg:mb-8'}`}
+                className="bg-gradient-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-card group relative overflow-visible"
               >
                 {/* Animated border glow */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <CardHeader className="pb-4 relative z-10">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-start justify-between mb-4">
                     <Badge variant="outline" className={`text-${stage.color} border-${stage.color}/30`}>
                       {stage.stage}
                     </Badge>
@@ -177,6 +178,20 @@ const CurriculumSection = () => {
                     </div>
                   </div>
                 </CardContent>
+
+                {/* Arrow for continuity (conditionally rendered) */}
+                {index < curriculumStages.length - 1 && index !== 3 && (
+                  <>
+                    {/* Horizontal arrow for desktop (lg screens) */}
+                    <div className="absolute z-20 hidden lg:flex items-center justify-center top-1/2 right-0 transform translate-x-[75%] -translate-y-1/2">
+                      <ChevronRight className="w-12 h-12 text-primary/70" />
+                    </div>
+                    {/* Vertical arrow for mobile/tablet (up to md screens) */}
+                    <div className="absolute z-20 flex lg:hidden items-center justify-center bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[75%]">
+                      <ChevronDown className="w-12 h-12 text-primary/70" />
+                    </div>
+                  </>
+                )}
               </Card>
             );
           })}
@@ -186,19 +201,19 @@ const CurriculumSection = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-card border border-border rounded-2xl p-8 max-w-2xl mx-auto shadow-card">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Master All <span className="text-gradient-primary">8 Stages</span>?
+              Ready to Master All <span className="text-gradient-primary">7 Stages</span>?
             </h3>
             <p className="text-muted-foreground mb-6">
               Get access to our complete blue team curriculum and transform your cybersecurity career in just 12 months.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-green mb-1">$2,997</div>
-                <div className="text-sm text-muted-foreground line-through">Regular: $4,995</div>
+                <div className="text-3xl font-bold text-cyber-green mb-1">₹20,000</div>
+                <div className="text-sm text-muted-foreground line-through">Regular: ₹1,00,000</div>
               </div>
               <div className="flex items-center">
                 <Badge className="bg-cyber-red text-white animate-pulse-cyber">
-                  Limited Time: Save $1,998
+                  Limited Time: Save ₹80,000
                 </Badge>
               </div>
             </div>

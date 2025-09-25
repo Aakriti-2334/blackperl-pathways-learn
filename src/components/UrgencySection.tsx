@@ -7,7 +7,7 @@ import { Flame, Clock, ArrowRight, Star } from "lucide-react";
 const UrgencySection = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
-    hours: 0,
+    hours: 1,
     minutes: 14,
     seconds: 47
   });
@@ -29,7 +29,7 @@ const UrgencySection = () => {
               days--;
               if (days < 0) {
                 // Reset to original values - final minutes!
-                return { days: 0, hours: 0, minutes: 14, seconds: 47 };
+                return { days: 0, hours: 1, minutes: 14, seconds: 47 };
               }
             }
           }
@@ -44,24 +44,24 @@ const UrgencySection = () => {
 
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "SOC Analyst at Microsoft",
-      image: "👩‍💻",
-      text: "Went from $45K to $135K in 8 months. The hands-on labs were game-changing!",
+      name: "Sumit Chhabra",
+      role: "Threat Hunter at Microsoft",
+      image: "👨‍💻",
+      text: "Just completed the Blackperl Threat Hunting course — an incredibly well-structured and hands-on learning experience. It dives deep into attacker tactics, detection techniques, and real-world hunting strategies. The blend of practical labs and expert guidance makes it a must for anyone in a SOC or threat intel role. Highly recommend !!!",
       rating: 5
     },
     {
-      name: "Marcus Johnson", 
-      role: "DFIR Specialist at IBM",
+      name: "Souvik Roy", 
+      role: "Detection Engineer at Sophos",
       image: "👨‍💼",
-      text: "Best investment I ever made. Now leading a team of 12 security analysts.",
+      text: "I have recently purchased BCAD. All sessions are well-structured and clearly explained. The technical concepts are presented with helpful examples, making them easy to understand. The pace of the teacher’s explanations is just right, allowing me to follow along comfortably. Whenever I had any doubts, they helped me as soon as possible—sometimes even through one-on-one calls, if needed..",
       rating: 5
     },
     {
-      name: "Lisa Rodriguez",
-      role: "Threat Hunter at Cisco", 
-      image: "👩‍🔬",
-      text: "The practical skills got me hired immediately. 200% salary increase!",
+      name: "Eaghalaivan S",
+      role: "DFIR specialist at Amazon", 
+      image: "👨‍🔬",
+      text: "The BCAD Accelerated program from BlackPerl DFIR is outstanding. The course is well-organized, progressing from basics to advanced DFIR techniques. The instructors are highly knowledgeable and responsive, making complex topics clear and engaging. I highly recommend this program for anyone looking to deepen their DFIR expertise.",
       rating: 5
     }
   ];
@@ -115,15 +115,15 @@ const UrgencySection = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-cyber-green">$1,997</div>
-              <div className="text-lg text-muted-foreground line-through">Was $4,995</div>
-              <Badge className="bg-cyber-red text-white mt-2">Save $2,998 Today</Badge>
+              <div className="text-5xl font-bold text-cyber-green">₹20,000</div>
+              <div className="text-lg text-muted-foreground line-through">Was ₹1,00,000</div>
+              <Badge className="bg-cyber-red text-white mt-2">Save ₹80,000 Today</Badge>
             </div>
             <div className="text-4xl text-muted-foreground">+</div>
             <div className="text-center">
               <div className="text-2xl font-bold text-cyber-blue">FREE</div>
               <div className="text-sm text-muted-foreground">Career Coaching</div>
-              <div className="text-xs text-muted-foreground">(Worth $500)</div>
+              <div className="text-xs text-muted-foreground">(Worth ₹20,000)</div>
             </div>
           </div>
           
@@ -167,9 +167,9 @@ const UrgencySection = () => {
         {/* Final CTA */}
         <div className="text-center">
           <div className="bg-gradient-card border border-cyber-red/30 rounded-2xl p-8 max-w-4xl mx-auto shadow-cyber">
-            <h3 className="text-3xl font-bold mb-4 text-cyber-red">
-              🚨 THIS OFFER DISAPPEARS IN {timeLeft.minutes} MINUTES!
-            </h3>
+<h3 className="text-3xl font-bold mb-4 text-cyber-red">
+  🚨 THIS OFFER DISAPPEARS IN {timeLeft.hours} HOURS AND {timeLeft.minutes} MINUTES!
+</h3>
             <p className="text-muted-foreground mb-6">
               Join the 15,000+ professionals who chose security over uncertainty. 
               Your future self will thank you for taking action today.
