@@ -115,21 +115,25 @@ const UrgencySection = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-cyber-green">₹20,000</div>
-              <div className="text-lg text-muted-foreground line-through">Was ₹1,00,000</div>
-              <Badge className="bg-cyber-red text-white mt-2">Save ₹80,000 Today</Badge>
+              <div className="text-5xl font-bold text-cyber-green">₹3,999</div>
+              <div className="text-lg text-muted-foreground line-through">Was ₹25,000</div>
+              <Badge className="bg-cyber-red text-white mt-2">Save ₹21,000 Today</Badge>
             </div>
             <div className="text-4xl text-muted-foreground">+</div>
             <div className="text-center">
               <div className="text-2xl font-bold text-cyber-blue">FREE</div>
               <div className="text-sm text-muted-foreground">Career Coaching</div>
-              <div className="text-xs text-muted-foreground">(Worth ₹20,000)</div>
+              <div className="text-xs text-muted-foreground">(Worth ₹5,000)</div>
             </div>
           </div>
           
-          <Button size="lg" className="bg-gradient-primary hover:shadow-cyber transition-all duration-300 animate-glow text-lg px-8 py-4">
-            Secure Your Spot Now <ArrowRight className="ml-2 w-6 h-6" />
-          </Button>
+          <Button
+  size="lg"
+  className="bg-gradient-primary hover:shadow-cyber transition-all duration-300 animate-glow text-lg px-8 py-4"
+  onClick={() => window.open('https://rzp.io/rzp/1RJBwLv', '_blank')}
+>
+  Secure Your Spot Now <ArrowRight className="ml-2 w-6 h-6" />
+</Button>
           
           <p className="text-sm text-muted-foreground mt-4">
             <Clock className="w-4 h-4 inline mr-1" />

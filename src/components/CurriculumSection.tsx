@@ -78,15 +78,15 @@ const curriculumStages = [
     skills: ["Hunting Methodologies", "Behavioral Analysis", "Advanced Analytics", "Threat Modeling"],
     courses: ["Advanced Threat Hunting", "Behavioral Analytics"]
   },
-  {
-    stage: "Stage 8",
-    title: "Leadership & Strategy",
-    description: "Lead cybersecurity teams, develop security strategy, and communicate risks to executives.",
-    icon: Users,
-    color: "cyber-yellow",
-    skills: ["Team Leadership", "Risk Management", "Executive Communication", "Strategic Planning"],
-    courses: ["Cybersecurity Leadership", "Risk Management"]
-  }
+  // {
+  //   stage: "Stage 8",
+  //   title: "Leadership & Strategy",
+  //   description: "Lead cybersecurity teams, develop security strategy, and communicate risks to executives.",
+  //   icon: Users,
+  //   color: "cyber-yellow",
+  //   skills: ["Team Leadership", "Risk Management", "Executive Communication", "Strategic Planning"],
+  //   courses: ["Cybersecurity Leadership", "Risk Management"]
+  // }
 ];
 
 const CurriculumSection = () => {
@@ -105,7 +105,7 @@ const CurriculumSection = () => {
             COMPREHENSIVE CURRICULUM
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-cyber-blue">8 Blue Team Stages</span>
+            <span className="text-cyber-blue">7 Blue Team Stages</span>
             <br />
             You'll Master With This Bundle
           </h2>
@@ -208,12 +208,12 @@ const CurriculumSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-green mb-1">₹20,000</div>
-                <div className="text-sm text-muted-foreground line-through">Regular: ₹1,00,000</div>
+                <div className="text-3xl font-bold text-cyber-green mb-1">₹3,999</div>
+                <div className="text-sm text-muted-foreground line-through">Regular: ₹25,000</div>
               </div>
               <div className="flex items-center">
                 <Badge className="bg-cyber-red text-white animate-pulse-cyber">
-                  Limited Time: Save ₹80,000
+                  Limited Time: Save ₹20,000
                 </Badge>
               </div>
             </div>
