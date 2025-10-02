@@ -1,0 +1,27 @@
+
+.cert-scroller {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+  mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+}
+
+.cert-scroller-inner {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.cert-scroller img {
+  height: 300px;
+  margin: 0 20px;
+  object-fit: contain;
+  width: 100%;
+}

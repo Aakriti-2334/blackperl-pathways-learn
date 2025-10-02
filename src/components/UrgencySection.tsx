@@ -3,6 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Flame, Clock, ArrowRight, Star } from "lucide-react";
+import "./UrgencySection.css";
+import certA from "@/assets/certs/a.jpg";
+import certB from "@/assets/certs/b.jpg";
+import certC from "@/assets/certs/c.jpg";
+import certD from "@/assets/certs/d.jpg";
 
 const UrgencySection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -65,6 +70,8 @@ const UrgencySection = () => {
       rating: 5
     }
   ];
+
+  const certs = [certA, certB, certC, certD];
 
   return (
     <section className="py-20 bg-gradient-to-b from-muted/20 to-background relative overflow-hidden">
@@ -139,9 +146,17 @@ const UrgencySection = () => {
             <Clock className="w-4 h-4 inline mr-1" />
             Only 3 spots remaining at this price - Timer expires soon!
           </p>
+
+          <div className="cert-scroller mt-8">
+            <div className="cert-scroller-inner">
+              {[...certs, ...certs].map((cert, index) => (
+                <img key={index} src={cert} alt={`Certificate ${index + 1}`} />
+              ))}
+            </div>
+          </div>
         </div>
         
-        {/* Social Proof / Testimonials */}
+        {/* Social Proaof / Testimonials */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-gradient-card border-border hover:border-primary/50 transition-all duration-300 shadow-card">
