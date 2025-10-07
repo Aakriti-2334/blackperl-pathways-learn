@@ -17,6 +17,10 @@ import {
 } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import archan from "@/assets/legends/archan.jpg";
+import rajshekhar from "@/assets/legends/rajshkhar.jpg";
+import arpit from "@/assets/legends/arpit.jpg";
+import souvik from "@/assets/legends/souvik.jpg";
 
 // Curriculum Data
 const curriculumStages = [
@@ -96,7 +100,7 @@ const mentors = [
       "Led SOC teams at Fortune 500 companies",
       "Trained 5000+ security professionals"
     ],
-    image: "/src/assets/legends/archan.jpg"
+    image: archan
   },
   {
     name: "Rajshekar Vijay",
@@ -107,7 +111,7 @@ const mentors = [
       "Discovered 50+ zero-day vulnerabilities",
       "Developed advanced malware detection systems"
     ],
-    image: "/src/assets/legends/rajshkhar.jpg"
+    image: rajshekhar
   },
   {
     name: "Arpit Kumar",
@@ -118,7 +122,7 @@ const mentors = [
       "Built IR frameworks for global enterprises",
       "Handled 500+ security incidents"
     ],
-    image: "/src/assets/legends/arpit.jpg"
+    image: arpit
   },
   {
     name: "Souvik Biswas",
@@ -129,7 +133,7 @@ const mentors = [
       "Designed threat hunting programs for MNCs",
       "Mentored 3000+ SOC analysts"
     ],
-    image: "/src/assets/legends/souvik.jpg"
+    image: souvik
 
   }
   

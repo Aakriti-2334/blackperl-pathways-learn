@@ -4,14 +4,20 @@ import { Button } from "@/components/ui/button";
 import { Building2, Users, Award, CheckCircle2, ArrowRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import client1 from "@/assets/trust/1.png";
+import client2 from "@/assets/trust/2.png";
+import client3 from "@/assets/trust/3.png";
+import client4 from "@/assets/trust/4.png";
+import client5 from "@/assets/trust/5.png";
+
 
 const corporateClients = [
-  { logo: "/src/assets/trust/1.png" },
-  { logo: "/src/assets/trust/2.png" },
-  { logo: "/src/assets/trust/3.png" },
-  { logo: "/src/assets/trust/4.png" },
-  { logo: "/src/assets/trust/5.png" },
-  { logo: "/src/assets/trust/1.png" }
+  { logo: client1 },
+  { logo: client2 },
+  { logo: client3 },
+  { logo: client4 },
+  { logo: client5 },
+  { logo: client1 }
 ];
 
 const trainingFeatures = [
