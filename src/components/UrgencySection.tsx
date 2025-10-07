@@ -193,9 +193,11 @@ const UrgencySection = () => {
               Join the 15,000+ professionals who chose security over uncertainty. 
               Your future self will thank you for taking action today.
             </p>
-            <Button size="lg" className="bg-cyber-red hover:bg-cyber-red/80 text-white text-xl px-12 py-4 animate-pulse-cyber">
-              Yes, I Want Career Security →
-            </Button>
+            <a href="https://pages.razorpay.com/pl_RMZkRoZfZgDOtF/view" target="_blank" rel="noopener noreferrer">
+  <Button size="lg" class="bg-cyber-red hover:bg-cyber-red/80 text-white text-xl px-12 py-4 animate-pulse-cyber">
+    Yes, I Want Career Security →
+  </Button>
+</a>
           </div>
         </div>
       </div>

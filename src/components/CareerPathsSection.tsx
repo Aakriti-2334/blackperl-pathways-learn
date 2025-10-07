@@ -215,9 +215,11 @@ const CareerPathsSection = () => {
         </div>
         
         <div className="text-center mt-12">
-          <Button size="lg" className="bg-gradient-primary hover:shadow-cyber transition-all duration-300">
-            Join All Career Paths <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+          <a href="https://pages.razorpay.com/pl_RMZkRoZfZgDOtF/view" target="_blank" rel="noopener noreferrer">
+  <Button size="lg" className="bg-gradient-primary hover:shadow-cyber transition-all duration-300">
+    Join All Career Paths <ArrowRight className="ml-2 w-5 h-5" />
+  </Button>
+</a>
         </div>
       </div>
     </section>
