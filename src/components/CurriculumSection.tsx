@@ -287,7 +287,7 @@ const CurriculumSection = () => {
                       <div className="text-center space-y-2">
                         <h3 className="text-xl font-bold">{mentor.name}</h3>
                         <p className="text-primary font-semibold">{mentor.title}</p>
-                        {mentor.name === "Archan Choudhary" && (
+                        { (mentor.name === "Archan Choudhary" || mentor.name === "Rajshekar Vijay") && (
                           <p className="text-sm text-muted-foreground">Ex-Amazon</p>
                         )}
                       </div>
