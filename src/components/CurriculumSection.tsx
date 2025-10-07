@@ -104,7 +104,7 @@ const mentors = [
   },
   {
     name: "Rajshekar Vijay",
-    title: "CTO Blackperl DFIR",
+    title: "Security Architect",
     experience: "15+ Years",
     specialization: "Malware Analysis & Reverse Engineering",
     achievements: [
@@ -287,6 +287,9 @@ const CurriculumSection = () => {
                       <div className="text-center space-y-2">
                         <h3 className="text-xl font-bold">{mentor.name}</h3>
                         <p className="text-primary font-semibold">{mentor.title}</p>
+                        {mentor.name === "Archan Choudhary" && (
+                          <p className="text-sm text-muted-foreground">Ex-Amazon</p>
+                        )}
                       </div>
                       <div className="flex items-center justify-center gap-2 text-sm">
                         <Briefcase className="w-4 h-4 text-secondary" />
