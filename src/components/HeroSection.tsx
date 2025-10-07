@@ -105,7 +105,7 @@ const Hero = () => {
                 <p className="text-lg text-muted-foreground">
                   However, if you prefer to focus on specific skills,{" "}
                   <span className="font-semibold text-foreground">
-                    individual courses can be purchased for just ₹1,119 each
+                    individual courses can be purchased for just ₹999 each
                   </span>
                   .
                 </p>
