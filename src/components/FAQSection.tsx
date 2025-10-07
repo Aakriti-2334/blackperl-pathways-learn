@@ -13,11 +13,11 @@ const FAQSection = () => {
     },
     {
       question: "Is this offer really ₹3,999 instead of ₹25,000?",
-      answer: "Yes! This is a limited-time special offer exclusively for early adopters. The regular price for the complete suite is ₹25,000, but we're offering it at just ₹3,999 (a 98% discount) to help aspiring cybersecurity professionals launch their careers. This price includes all 15 courses plus 3 bonus modules."
+      answer: "Yes! This is a limited-time special offer exclusively for early adopters. The regular price for the complete suite is ₹25,000, but we're offering it at just ₹3,999 (a 98% discount) to help aspiring cybersecurity professionals launch their careers. This price includes all 30+ courses."
     },
     {
       question: "Can I purchase individual courses instead of the complete suite?",
-      answer: "Absolutely! If you prefer to focus on specific skills, individual courses are available for ₹999 each. However, purchasing the complete suite gives you access to all 10+ courses and 2 bonuses at a fraction of the cost, making it the most economical option for comprehensive learning."
+      answer: "Absolutely! If you prefer to focus on specific skills, individual courses are available for ₹999 each. However, purchasing the complete suite gives you access to all 30+ courses and 2 bonuses at a fraction of the cost, making it the most economical option for comprehensive learning."
     },
     {
       question: "What skill level do I need to start these courses?",
