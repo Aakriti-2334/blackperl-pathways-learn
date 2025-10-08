@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+    container_name: blackperl-pathways-learn
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    command: >
+      /bin/sh -c "
+        nginx -g 'daemon off;'
+      "
